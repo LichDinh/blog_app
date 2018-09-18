@@ -23,3 +23,10 @@ user=User.find(1)
 50.times do |n|
   user.microposts.create content: "ABC#{n+1}"
 end
+# Following relationships
+users = User.all
+user  = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }

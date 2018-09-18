@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module BlogApp
   class Application < Rails::Application
+
+
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 config.action_mailer.perform_deliveries = true
@@ -23,5 +27,7 @@ config.action_mailer.perform_deliveries = true
       authentication:       'plain',
       enable_starttls_auto: true
     }
+    
+
   end
 end
