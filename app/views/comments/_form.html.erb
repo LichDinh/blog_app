@@ -1,0 +1,14 @@
+<%= form_for(comment, remote: true) do |f| %>
+  <div class="form-group">
+    <%= f.text_area :content, class: "form-control", rows: 3 %>
+  </div>
+
+  <%= f.hidden_field :micropost_id, value: comment.micropost_id %>
+
+  <div class="form-group">
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
+<div>
+	
+</div>

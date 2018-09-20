@@ -19,15 +19,6 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 1.2em;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: normal;
-    color: #777;
-}
-
 p {
     font-size: 1.1em;
     line-height: 1.7em;
@@ -244,34 +235,14 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-}
 
-footer a {
-  color: #555;
-}
 
-footer a:hover {
-  color: #222;
-}
 
-footer small {
-  float: left;
-}
 
-footer ul {
-  float: right;
-  list-style: none;
-}
 
-footer ul li {
-  float: left;
-  margin-left: 15px;
-}
+
+
+
 $gray-medium-light: #eaeaea;
 
 /* universal */
@@ -314,7 +285,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #fff;
 }
 
 p {
@@ -340,31 +311,7 @@ p {
   }
 }
 
-/* footer */
 
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
-}
 /* microposts */
 
 .microposts {
@@ -456,4 +403,26 @@ span.picture {
 
 .users.follow {
   padding: 0;
+}
+.body_one {
+    background: #6b5ea3;
+    width: 100%;
+     height: 481px;
+    margin-top: -92px;
+    color: #fff;
+}
+.body_text {
+    padding-top: 126px;
+}
+a {
+    color: #61eb08;
+    text-decoration: none;
+}
+.col-lg-8.col-lg-offset-2 {
+    text-align: center;
+}
+img {
+    /* vertical-align: middle; */
+    /* margin-left: 3%; */
+    margin: 15px;
 }
