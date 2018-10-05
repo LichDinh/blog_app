@@ -8,7 +8,11 @@ Bundler.require(*Rails.groups)
 
 module BlogApp
   class Application < Rails::Application
-
+    set :stage, :production
+set :rails_env, :production
+set :deploy_to, "/deploy/apps/my_app_lich"
+set :branch, :config_deploy
+server "52.41.160.183", user: "lichdinhtb", roles: %w(web app db)
 
     # Include the authenticity token in remote forms.
     config.action_view.embed_authenticity_token_in_remote_forms = true

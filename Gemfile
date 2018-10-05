@@ -68,4 +68,9 @@ gem 'jquery-rails'
 group :production do
   gem "pg",             "~> 0.18"
   gem "rails_12factor", "0.0.2"
+  gem "capistrano"
+  gem "capistrano3-puma"
+  gem "capistrano-rails", require: false
+  gem "capistrano-bundler", require: false
+  gem "capistrano-rvm"
 end
